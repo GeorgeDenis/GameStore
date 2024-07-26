@@ -1,0 +1,25 @@
+<mat-card class="card-content" *ngIf="review">
+    <mat-card-header class="header">
+        <mat-card-title style="color: green;" *ngIf="review.rating >= 3">Recommended</mat-card-title>
+        <mat-card-title style="color: red;" *ngIf="review.rating < 3">Not Recommended</mat-card-title>
+        <mat-card-subtitle style="color: gray;">
+            Posted at: {{ review.reviewDate | date:'mediumDate' }}
+        </mat-card-subtitle>
+
+        <div class="rating">
+            <ng-container *ngFor="let star of [1, 2, 3, 4, 5]; let i = index">
+                <mat-icon *ngIf="i < review.rating" style="color: gold;">star</mat-icon>
+                <mat-icon *ngIf="i >= review.rating" style="color: lightgray;">star</mat-icon>
+            </ng-container>
+        </div>
+    </mat-card-header>
+    <mat-card-content class="content">
+        <div class="user">
+            <mat-icon aria-hidden="false" aria-label="Example user icon" fontIcon="account_circle"></mat-icon>
+            George
+        </div>
+        <p class="comment">
+            {{ review.comment }}
+        </p>
+    </mat-card-content>
+</mat-card>

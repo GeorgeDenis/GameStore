@@ -1,0 +1,11 @@
+C:\Users\gduluta\OneDrive - Centric\Desktop\Steam\Domain\bin\Debug\net8.0\Domain.deps.json
+C:\Users\gduluta\OneDrive - Centric\Desktop\Steam\Domain\bin\Debug\net8.0\Domain.dll
+C:\Users\gduluta\OneDrive - Centric\Desktop\Steam\Domain\bin\Debug\net8.0\Domain.pdb
+C:\Users\gduluta\OneDrive - Centric\Desktop\Steam\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gduluta\OneDrive - Centric\Desktop\Steam\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+C:\Users\gduluta\OneDrive - Centric\Desktop\Steam\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+C:\Users\gduluta\OneDrive - Centric\Desktop\Steam\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\gduluta\OneDrive - Centric\Desktop\Steam\Domain\obj\Debug\net8.0\Domain.dll
+C:\Users\gduluta\OneDrive - Centric\Desktop\Steam\Domain\obj\Debug\net8.0\refint\Domain.dll
+C:\Users\gduluta\OneDrive - Centric\Desktop\Steam\Domain\obj\Debug\net8.0\Domain.pdb
+C:\Users\gduluta\OneDrive - Centric\Desktop\Steam\Domain\obj\Debug\net8.0\ref\Domain.dll

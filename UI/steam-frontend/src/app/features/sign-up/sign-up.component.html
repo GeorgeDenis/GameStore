@@ -1,0 +1,15 @@
+<div class="outer">
+    <div class="content">
+        <h1 style="color: white;">Create your account</h1>
+        <form class="form" (ngSubmit)="signUp()">
+            <label>Email Address</label>
+            <input name="email" type="text" [(ngModel)]="credentials.email">
+            <label>Name</label>
+            <input name="name" type="text" [(ngModel)]="credentials.name">
+            <label>Password</label>
+            <input name="password" type="password" [(ngModel)]="credentials.password">
+            <button mat-raised-button class="btn" style="background: #253846; color: white;">Sign Up</button>
+            <p>Already have an account? <a routerLink="/sign-in" style="color:white">Sign in</a></p>
+        </form>
+    </div>
+</div>

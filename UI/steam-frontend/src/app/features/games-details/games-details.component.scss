@@ -1,0 +1,145 @@
+.outer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.game-details {
+    display: flex;
+    flex-direction: column;
+    width: 1100px;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(44, 63, 77, 1) 0%, rgba(52, 66, 77, 1) 52%, rgba(32, 44, 54, 1) 100%);
+    border-radius: 4px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.title {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-left: 17%;
+    color: white;
+}
+
+.game-image {
+    width: 550px;
+    height: 350px;
+}
+
+#content {
+    display: flex;
+    gap: 15px;
+    font-size: small;
+    color: grey;
+}
+
+#mini-image {
+    width: 350px;
+    height: 150px;
+    border-radius: 4px;
+}
+
+#game-data {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    gap: 5px;
+    padding: 0;
+    margin: 0;
+}
+
+#game-data p {
+    margin: 0;
+}
+
+#game-description {
+    max-width: 350px;
+    color: white;
+    font-size: small;
+    margin: 0;
+}
+
+.genres {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3px;
+    color: #5aa0c4;
+    max-width: 350px;
+}
+
+#genre {
+    background: #213b4d;
+    border-radius: 4px;
+    padding: 2px 3px;
+    font-size: small;
+    margin: 0;
+}
+
+.buy-content {
+    width: 900px;
+    background: linear-gradient(to bottom, #2d3d4c 0%, #2c3c4b 83%, #324251 86%, #2b3b4a 90%, #2f3f4e 93%, #2b3b4a 97%, #1a2a39 100%);
+    margin-top: 20px;
+    border-radius: 4px;
+    padding: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.buy-area {
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+    height: 40px;
+    border-radius: 3px;
+    background-color: black;
+    padding: 2px;
+}
+
+#price-part {
+    color: aliceblue;
+    padding: 0 20px;
+}
+
+#add-part {
+    background-color: #8dd22d;
+    padding: 7px 25px;
+    border-radius: 3px;
+    color: aliceblue;
+    cursor: pointer;
+    margin-left: 2px;
+}
+
+.games-wrapper {
+    width: 100%;
+    max-height: 750px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    margin-top: 20px; 
+}
+
+.games-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.games-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-content {
+    width: 900px;
+    background: linear-gradient(to bottom, #2d3d4c 0%, #2c3c4b 83%, #324251 86%, #2b3b4a 90%, #2f3f4e 93%, #2b3b4a 97%, #1a2a39 100%);
+    margin-top: 20px;
+    border-radius: 4px;
+    padding: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -1,0 +1,72 @@
+.game-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 170px;
+    width: 800px;
+    background: rgb(44, 63, 77);
+    background: linear-gradient(0deg, rgba(44, 63, 77, 1) 0%, rgba(52, 66, 77, 1) 52%, rgba(32, 44, 54, 1) 100%);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    gap: 5px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+.game-data {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 0;
+}
+
+.game-image {
+    height: 110px;
+    width: 200px;
+    border-radius: 2px;
+    margin: 0;
+}
+
+.price-tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 60px;
+    background-color: green;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.genres {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: #5aa0c4;
+    margin: 0;
+    max-width: 430px;
+}
+
+#genre {
+    background: #253846;
+    border-radius: 4px;
+    padding: 2px 5px;
+    font-size: small;
+    margin: 1px;
+}
+.description{
+    width: 400px;
+    margin: 0;
+    margin-bottom: 10px;
+}

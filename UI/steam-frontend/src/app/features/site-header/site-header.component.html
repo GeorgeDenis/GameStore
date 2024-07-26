@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="left">
+        <a routerLink="/home" routerLinkActive="active">Home</a>
+        <a routerLink="/games" *ngIf="isAuthenticated()" routerLinkActive="active">Store</a>
+    </div>
+    <div class="right">
+        <a routerLink="/sign-in" *ngIf="!isAuthenticated()" routerLinkActive="active">Login</a>
+        <a routerLink="/sign-up" *ngIf="!isAuthenticated()" routerLinkActive="active">Register</a>
+        <a (click)="logout()" *ngIf="isAuthenticated()">Logout</a>
+    </div>
+</div>

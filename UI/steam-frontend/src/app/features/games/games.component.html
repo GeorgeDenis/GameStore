@@ -1,0 +1,8 @@
+<div class="games-wrapper">
+    <div class="games-container">
+        <mat-spinner style="margin-top: 300px;" *ngIf="!gamesLoaded"></mat-spinner>
+        <div *ngFor="let game of games; let i = index">
+            <app-game-card [game]="game" [imageNr]="i"></app-game-card>
+        </div>
+    </div>
+</div>

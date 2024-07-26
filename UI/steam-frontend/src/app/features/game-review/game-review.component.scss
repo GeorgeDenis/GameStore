@@ -1,0 +1,32 @@
+.card-content {
+    width: 900px;
+    margin-top: 30px;
+    background: linear-gradient(to bottom, #2d3d4c 0%, #2c3c4b 83%, #324251 86%, #2b3b4a 90%, #2f3f4e 93%, #2b3b4a 97%, #1a2a39 100%);
+    padding: 10px;
+    color: white;
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+}
+.user{
+    display: flex;
+    align-items: center;
+}
+.comment {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.rating mat-icon {
+    font-size: 24px;
+    margin-right: 4px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}

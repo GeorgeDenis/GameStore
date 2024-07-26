@@ -1,0 +1,38 @@
+<div class="outer">
+  <mat-spinner style="margin-top: 300px;" *ngIf="!gameLoaded"></mat-spinner>
+  <div class="game-details" *ngIf="game">
+    <h1 class="title" *ngIf="game">{{game.name}}</h1>
+    <div id="content">
+      <img class="game-image" [src]="'data:image/jpeg;base64,' + game.image" />
+      <div id="game-data">
+        <img id="mini-image" [src]="'data:image/jpeg;base64,' + game.image" />
+        <p id="game-description">{{game.description}}</p>
+        <p>Release Date: <span style="color: #5aa0c4;">{{game.releaseDate.toString().split("T")[0]}}</span></p>
+        <p>Developer: <span style="color: #5aa0c4;">Valve</span></p>
+        <span>Tags for this product:</span>
+        <div class="genres" *ngIf="game.genre && game.genre.length > 0">
+          <p id="genre" *ngFor="let genre of game.genre">{{genre}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="buy-content" *ngIf="game">
+    <p style="color: white; font-size: 24px; margin-left: 25px;">Buy {{game.name}}</p>
+    <div class="buy-area">
+      <div id="price-part">{{game.price > 0 ? (game.price | currency: 'EUR') : 'FREE'}}</div>
+      <div id="add-part">Buy</div>
+    </div>
+  </div>
+  <div class="games-wrapper">
+    <div class="games-container" *ngIf="reviews.length > 0">
+      <app-game-review *ngFor="let review of reviews" [review]="review"></app-game-review>
+    </div>
+    <div class="games-container" *ngIf="reviews.length <= 0">
+      <mat-card class="card-content">
+        <mat-card-content style="font-weight:500; color: white;">
+          No reviews yet
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>

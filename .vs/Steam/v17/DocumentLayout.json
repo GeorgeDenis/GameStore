@@ -1,0 +1,173 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\gduluta\\OneDrive - Centric\\Desktop\\Steam\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B9F8FC1F-BC35-404A-9428-9C209BD89A3C}|API\\API.csproj|c:\\users\\gduluta\\onedrive - centric\\desktop\\steam\\api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9F8FC1F-BC35-404A-9428-9C209BD89A3C}|API\\API.csproj|solutionrelative:api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F90C605E-CADD-4134-BD00-D77CA007E38B}|Infrastructure\\Infrastructure.csproj|c:\\users\\gduluta\\onedrive - centric\\desktop\\steam\\infrastructure\\services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F90C605E-CADD-4134-BD00-D77CA007E38B}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F90C605E-CADD-4134-BD00-D77CA007E38B}|Infrastructure\\Infrastructure.csproj|c:\\users\\gduluta\\onedrive - centric\\desktop\\steam\\infrastructure\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F90C605E-CADD-4134-BD00-D77CA007E38B}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC1BA9BC-ED94-40A5-9C97-07035CD543D4}|Application\\Application.csproj|c:\\users\\gduluta\\onedrive - centric\\desktop\\steam\\application\\persistence\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC1BA9BC-ED94-40A5-9C97-07035CD543D4}|Application\\Application.csproj|solutionrelative:application\\persistence\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC1BA9BC-ED94-40A5-9C97-07035CD543D4}|Application\\Application.csproj|c:\\users\\gduluta\\onedrive - centric\\desktop\\steam\\application\\features\\gameuser\\queries\\getgamesbyuseridquery\\getgamesbyuseridqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC1BA9BC-ED94-40A5-9C97-07035CD543D4}|Application\\Application.csproj|solutionrelative:application\\features\\gameuser\\queries\\getgamesbyuseridquery\\getgamesbyuseridqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9F8FC1F-BC35-404A-9428-9C209BD89A3C}|API\\API.csproj|c:\\users\\gduluta\\onedrive - centric\\desktop\\steam\\api\\controllers\\gameusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9F8FC1F-BC35-404A-9428-9C209BD89A3C}|API\\API.csproj|solutionrelative:api\\controllers\\gameusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC1BA9BC-ED94-40A5-9C97-07035CD543D4}|Application\\Application.csproj|c:\\users\\gduluta\\onedrive - centric\\desktop\\steam\\application\\persistence\\iauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC1BA9BC-ED94-40A5-9C97-07035CD543D4}|Application\\Application.csproj|solutionrelative:application\\persistence\\iauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9F8FC1F-BC35-404A-9428-9C209BD89A3C}|API\\API.csproj|c:\\users\\gduluta\\onedrive - centric\\desktop\\steam\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9F8FC1F-BC35-404A-9428-9C209BD89A3C}|API\\API.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC1BA9BC-ED94-40A5-9C97-07035CD543D4}|Application\\Application.csproj|c:\\users\\gduluta\\onedrive - centric\\desktop\\steam\\application\\models\\tokeninfo\\tokeninfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC1BA9BC-ED94-40A5-9C97-07035CD543D4}|Application\\Application.csproj|solutionrelative:application\\models\\tokeninfo\\tokeninfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 153,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "C:\\Users\\gduluta\\OneDrive - Centric\\Desktop\\Steam\\Infrastructure\\Services\\TokenService.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Services\\TokenService.cs",
+              "ToolTip": "C:\\Users\\gduluta\\OneDrive - Centric\\Desktop\\Steam\\Infrastructure\\Services\\TokenService.cs",
+              "RelativeToolTip": "Infrastructure\\Services\\TokenService.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABcAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T15:23:38.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ITokenService.cs",
+              "DocumentMoniker": "C:\\Users\\gduluta\\OneDrive - Centric\\Desktop\\Steam\\Application\\Persistence\\ITokenService.cs",
+              "RelativeDocumentMoniker": "Application\\Persistence\\ITokenService.cs",
+              "ToolTip": "C:\\Users\\gduluta\\OneDrive - Centric\\Desktop\\Steam\\Application\\Persistence\\ITokenService.cs",
+              "RelativeToolTip": "Application\\Persistence\\ITokenService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T15:23:23.363Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GetGamesByUserIdQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\gduluta\\OneDrive - Centric\\Desktop\\Steam\\Application\\Features\\GameUser\\Queries\\GetGamesByUserIdQuery\\GetGamesByUserIdQueryHandler.cs",
+              "RelativeDocumentMoniker": "Application\\Features\\GameUser\\Queries\\GetGamesByUserIdQuery\\GetGamesByUserIdQueryHandler.cs",
+              "ToolTip": "C:\\Users\\gduluta\\OneDrive - Centric\\Desktop\\Steam\\Application\\Features\\GameUser\\Queries\\GetGamesByUserIdQuery\\GetGamesByUserIdQueryHandler.cs",
+              "RelativeToolTip": "Application\\Features\\GameUser\\Queries\\GetGamesByUserIdQuery\\GetGamesByUserIdQueryHandler.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwBUAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T15:23:06.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GameUserController.cs",
+              "DocumentMoniker": "C:\\Users\\gduluta\\OneDrive - Centric\\Desktop\\Steam\\API\\Controllers\\GameUserController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\GameUserController.cs",
+              "ToolTip": "C:\\Users\\gduluta\\OneDrive - Centric\\Desktop\\Steam\\API\\Controllers\\GameUserController.cs",
+              "RelativeToolTip": "API\\Controllers\\GameUserController.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAA1wAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T15:22:55.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IAuthenticationService.cs",
+              "DocumentMoniker": "C:\\Users\\gduluta\\OneDrive - Centric\\Desktop\\Steam\\Application\\Persistence\\IAuthenticationService.cs",
+              "RelativeDocumentMoniker": "Application\\Persistence\\IAuthenticationService.cs",
+              "ToolTip": "C:\\Users\\gduluta\\OneDrive - Centric\\Desktop\\Steam\\Application\\Persistence\\IAuthenticationService.cs",
+              "RelativeToolTip": "Application\\Persistence\\IAuthenticationService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T15:20:11.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\gduluta\\OneDrive - Centric\\Desktop\\Steam\\API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\gduluta\\OneDrive - Centric\\Desktop\\Steam\\API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "API\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAwwDUAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T15:18:08.79Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TokenInfo.cs",
+              "DocumentMoniker": "C:\\Users\\gduluta\\OneDrive - Centric\\Desktop\\Steam\\Application\\Models\\TokenInfo\\TokenInfo.cs",
+              "RelativeDocumentMoniker": "Application\\Models\\TokenInfo\\TokenInfo.cs",
+              "ToolTip": "C:\\Users\\gduluta\\OneDrive - Centric\\Desktop\\Steam\\Application\\Models\\TokenInfo\\TokenInfo.cs",
+              "RelativeToolTip": "Application\\Models\\TokenInfo\\TokenInfo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T12:18:07.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\gduluta\\OneDrive - Centric\\Desktop\\Steam\\API\\Program.cs",
+              "RelativeDocumentMoniker": "API\\Program.cs",
+              "ToolTip": "C:\\Users\\gduluta\\OneDrive - Centric\\Desktop\\Steam\\API\\Program.cs",
+              "RelativeToolTip": "API\\Program.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T12:11:19.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthenticationService.cs",
+              "DocumentMoniker": "C:\\Users\\gduluta\\OneDrive - Centric\\Desktop\\Steam\\Infrastructure\\Services\\AuthenticationService.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Services\\AuthenticationService.cs",
+              "ToolTip": "C:\\Users\\gduluta\\OneDrive - Centric\\Desktop\\Steam\\Infrastructure\\Services\\AuthenticationService.cs",
+              "RelativeToolTip": "Infrastructure\\Services\\AuthenticationService.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAgwEAAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T12:09:54.104Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

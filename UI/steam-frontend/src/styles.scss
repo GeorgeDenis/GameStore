@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: "MyFont";
+    src: url("./assets//fonts//NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf") format('truetype');
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: "MyFont";
+}
+
+body {
+    background: linear-gradient(90deg, rgba(25,25,54,1) 0%, rgba(35,35,55,1) 51%, rgba(59,58,84,1) 100%);
+
+    min-height: 100vh;
+}
+
+a.active {
+    text-decoration: none;
+    border-bottom: 2px solid #143591;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
