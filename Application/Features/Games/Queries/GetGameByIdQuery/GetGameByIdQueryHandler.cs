@@ -1,5 +1,6 @@
 ﻿using Application.Models.Game;
 using Application.Persistence;
+using Application.Strategy;
 using Mapster;
 using MediatR;
 
@@ -8,9 +9,11 @@ namespace Application.Features.Games.Queries.GetGameByIdQuery
     public class GetGameByIdQueryHandler : IRequestHandler<GetGameByIdQuery, GetGameByIdQueryResponse>
     {
         private readonly IGameRepository gameRepository;
-        public GetGameByIdQueryHandler(IGameRepository gameRepository)
+        private readonly IPriceCalculator priceCalculator;
+        public GetGameByIdQueryHandler(IGameRepository gameRepository, IPriceCalculator priceCalculator)
         {
             this.gameRepository = gameRepository;
+            this.priceCalculator = priceCalculator;
         }
         public async Task<GetGameByIdQueryResponse> Handle(GetGameByIdQuery request, CancellationToken cancellationToken)
         {
@@ -33,7 +36,7 @@ namespace Application.Features.Games.Queries.GetGameByIdQuery
                     Name = game.Value.Name,
                     Description = game.Value.Description,
                     ReleaseDate = game.Value.ReleaseDate,
-                    Price = game.Value.Price,
+                    Price = priceCalculator.Calculate(game.Value.Price),
                     DeveloperId = game.Value.DeveloperId,
                     Image = Convert.ToBase64String(game.Value.Image),
                     Genre = ConvertFromGenresStringToArray(game.Value.Genre),

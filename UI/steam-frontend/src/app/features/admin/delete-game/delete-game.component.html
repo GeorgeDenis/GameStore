@@ -1,0 +1,23 @@
+<div class="outer">
+    <div class="content">
+        <h1 style="color: white;">Delete Game</h1>
+        <form class="form">
+            <mat-form-field>
+                <mat-label>Game Id</mat-label>
+                <input matInput [(ngModel)]="gameId" name="name">
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Games</mat-label>
+                <mat-select [(ngModel)]="gameId" name="food">
+                    <mat-option *ngFor="let game of games" [value]="game.gameId">{{game.name}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <div class="buttons"> <button mat-raised-button class="btn" style="background: #253846; color: white;"
+                    (click)="handleClear()">Cancel</button>
+                <button mat-raised-button class="btn" style="background: #253846; color: white;"
+                    (click)="deleteGame()">Delete Game</button>
+            </div>
+
+        </form>
+    </div>
+</div>

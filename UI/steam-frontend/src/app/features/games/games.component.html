@@ -1,8 +1,12 @@
 <div class="games-wrapper">
-    <div class="games-container">
-        <mat-spinner style="margin-top: 300px;" *ngIf="!gamesLoaded"></mat-spinner>
-        <div *ngFor="let game of games; let i = index">
-            <app-game-card [game]="game" [imageNr]="i"></app-game-card>
-        </div>
+  <app-search-games *ngIf="gamesLoaded" (searchValueChange)="handleSearchValueChange($event)"></app-search-games>
+  <app-search-filter *ngIf="gamesLoaded"></app-search-filter>
+  <div class="games-container">
+    <mat-spinner style="margin-top: 300px;" *ngIf="!gamesLoaded"></mat-spinner>
+    <div>
+      <div *ngFor="let game of filteredGames; let i = index">
+        <app-game-card [game]="game" [imageNr]="i"></app-game-card>
+      </div>
     </div>
+  </div>
 </div>

@@ -1,6 +1,7 @@
 ﻿using Application.Models.TokenInfo;
 using Application.Persistence;
 using Domain.Common;
+using Domain.Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Caching.Memory;
 
@@ -22,6 +23,21 @@ namespace Infrastructure.Services
         {
             var token = httpContextAccessor.HttpContext.Request.Headers["Authorization"].FirstOrDefault();
             return Result<string>.Success(token);
+        }
+
+        public Result<TokenInfo> GetTokenData()
+        {
+            var token = httpContextAccessor.HttpContext.Request.Headers["Authorization"].FirstOrDefault();
+            if (string.IsNullOrEmpty(token))
+            {
+                return Result<TokenInfo>.Failure("Authorization token is missing!");
+            }
+            if (!memoryCache.TryGetValue(token, out TokenInfo tokenData))
+            {
+                return Result<TokenInfo>.Failure("Token info not found in cache!");
+            }
+
+            return Result<TokenInfo>.Success(tokenData);
         }
 
         public Result<string> GetUserId()

@@ -1,0 +1,15 @@
+<button mat-button [matMenuTriggerFor]="menu">
+    <mat-icon class="icon" style="font-size: 22px;">attach_money</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item class="country-btn" (click)="changeCurrency('EUR')">
+      <img src="../../../assets/flags/eu-flag.png" class="country-flag">EUR
+    </button>
+    <button mat-menu-item class="country-btn" (click)="changeCurrency('USD')">
+      <img src="../../../assets/flags/usa-flag.png" class="country-flag">USD
+    </button>
+    <button mat-menu-item class="country-btn" (click)="changeCurrency('RON')">
+      <img src="../../../assets/flags/ro-flag.jpg" class="country-flag">RON
+    </button>
+  </mat-menu>
+  

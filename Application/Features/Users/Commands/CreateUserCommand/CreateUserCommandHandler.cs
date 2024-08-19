@@ -1,4 +1,5 @@
 ﻿using Application.Persistence;
+using Domain.Common;
 using Domain.Entities;
 using MediatR;
 
@@ -13,7 +14,7 @@ namespace Application.Features.Users.Commands.CreateUserCommand
         }
         public async Task<CreateUserCommandResponse> Handle(CreateUserCommand request, CancellationToken cancellationToken)
         {
-            var user = new User(request.Name, request.Email, request.Password);
+            var user = new User(request.Name, request.Email, request.Password, Role.User);
             var result = await userRepository.AddAsync(user);
             if (!result.IsSuccess)
             {

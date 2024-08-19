@@ -1,5 +1,7 @@
 ﻿using Application.Models.TokenInfo;
+using Azure.Core;
 using Microsoft.Extensions.Caching.Memory;
+using System.Security.Claims;
 
 namespace API.Middleware
 {
@@ -15,7 +17,7 @@ namespace API.Middleware
         public async Task InvokeAsync(HttpContext context, RequestDelegate next)
         {
             var path = context.Request.Path.ToString().ToLower();
-            if (path.StartsWith("/api/v1/auth"))
+            if (path.StartsWith("/api/v1/auth") || path.StartsWith("/notification"))
             {
                 await next(context);
                 return;
@@ -24,14 +26,29 @@ namespace API.Middleware
 
             if (!string.IsNullOrEmpty(token) && memoryCache.TryGetValue(token, out TokenInfo tokenInfo))
             {
-                var expirationTime = DateTime.Now.AddMinutes(30);
-                tokenInfo!.ExpirationTime = expirationTime;
-                memoryCache.Set(token, tokenInfo, new MemoryCacheEntryOptions
+                var currentFingerprint = TokenInfo.GetFingerprint(context.Request);
+                if (tokenInfo.Fingerprint == currentFingerprint)
                 {
-                    AbsoluteExpiration = expirationTime
-                });
-                await next(context);
-                return;
+                    var claims = new List<Claim>
+                {
+                    new Claim(ClaimTypes.NameIdentifier, tokenInfo.UserId),
+                    new Claim(ClaimTypes.Email, tokenInfo.Email),
+                    new Claim(ClaimTypes.Role, tokenInfo.UserRole)  // Role claim
+                };
+
+                    var identity = new ClaimsIdentity(claims, "Token");
+                    context.User = new ClaimsPrincipal(identity);
+
+                    var expirationTime = DateTime.Now.AddMinutes(30);
+                    tokenInfo!.ExpirationTime = expirationTime;
+                    memoryCache.Set(token, tokenInfo, new MemoryCacheEntryOptions
+                    {
+                        AbsoluteExpiration = expirationTime
+                    });
+
+                    await next(context);
+                    return;
+                }
             }
             context.Response.StatusCode = StatusCodes.Status401Unauthorized;
         }

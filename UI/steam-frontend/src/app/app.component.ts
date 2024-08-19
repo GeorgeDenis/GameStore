@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { NotificationService } from './core/services/notification.service';
+import { NotificationSocketService } from './core/services/notification-socket.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'steam-frontend';
+  constructor(private notificationSocket: NotificationSocketService) { }
 }

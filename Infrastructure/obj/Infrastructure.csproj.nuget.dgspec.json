@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gduluta\\OneDrive - Centric\\Desktop\\Steam\\Infrastructure\\Infrastructure.csproj": {}
+    "K:\\SteamClone\\SteamClone\\Infrastructure\\Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gduluta\\OneDrive - Centric\\Desktop\\Steam\\Application\\Application.csproj": {
+    "K:\\SteamClone\\SteamClone\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gduluta\\OneDrive - Centric\\Desktop\\Steam\\Application\\Application.csproj",
+        "projectUniqueName": "K:\\SteamClone\\SteamClone\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\gduluta\\OneDrive - Centric\\Desktop\\Steam\\Application\\Application.csproj",
-        "packagesPath": "C:\\Users\\gduluta\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gduluta\\OneDrive - Centric\\Desktop\\Steam\\Application\\obj\\",
+        "projectPath": "K:\\SteamClone\\SteamClone\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\georg\\.nuget\\packages\\",
+        "outputPath": "K:\\SteamClone\\SteamClone\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\gduluta\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\georg\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,14 +22,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\gduluta\\OneDrive - Centric\\Desktop\\Steam\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\gduluta\\OneDrive - Centric\\Desktop\\Steam\\Domain\\Domain.csproj"
+              "K:\\SteamClone\\SteamClone\\Domain\\Domain.csproj": {
+                "projectPath": "K:\\SteamClone\\SteamClone\\Domain\\Domain.csproj"
               }
             }
           }
@@ -73,6 +74,10 @@
               "target": "Package",
               "version": "[2.2.2, )"
             },
+            "Microsoft.AspNetCore.SignalR.Core": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.7, )"
@@ -92,6 +97,10 @@
             "Microsoft.Extensions.DependencyInjection.Abstractions": {
               "target": "Package",
               "version": "[8.0.1, )"
+            },
+            "NLog": {
+              "target": "Package",
+              "version": "[5.3.2, )"
             }
           },
           "imports": [
@@ -110,21 +119,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\gduluta\\OneDrive - Centric\\Desktop\\Steam\\Domain\\Domain.csproj": {
+    "K:\\SteamClone\\SteamClone\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gduluta\\OneDrive - Centric\\Desktop\\Steam\\Domain\\Domain.csproj",
+        "projectUniqueName": "K:\\SteamClone\\SteamClone\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\gduluta\\OneDrive - Centric\\Desktop\\Steam\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\gduluta\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gduluta\\OneDrive - Centric\\Desktop\\Steam\\Domain\\obj\\",
+        "projectPath": "K:\\SteamClone\\SteamClone\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\georg\\.nuget\\packages\\",
+        "outputPath": "K:\\SteamClone\\SteamClone\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\gduluta\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\georg\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -132,6 +141,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -170,21 +180,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\gduluta\\OneDrive - Centric\\Desktop\\Steam\\Infrastructure\\Infrastructure.csproj": {
+    "K:\\SteamClone\\SteamClone\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gduluta\\OneDrive - Centric\\Desktop\\Steam\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "K:\\SteamClone\\SteamClone\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\gduluta\\OneDrive - Centric\\Desktop\\Steam\\Infrastructure\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\gduluta\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gduluta\\OneDrive - Centric\\Desktop\\Steam\\Infrastructure\\obj\\",
+        "projectPath": "K:\\SteamClone\\SteamClone\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\georg\\.nuget\\packages\\",
+        "outputPath": "K:\\SteamClone\\SteamClone\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\gduluta\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\georg\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -192,14 +202,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\gduluta\\OneDrive - Centric\\Desktop\\Steam\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\gduluta\\OneDrive - Centric\\Desktop\\Steam\\Application\\Application.csproj"
+              "K:\\SteamClone\\SteamClone\\Application\\Application.csproj": {
+                "projectPath": "K:\\SteamClone\\SteamClone\\Application\\Application.csproj"
               }
             }
           }
@@ -264,7 +275,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

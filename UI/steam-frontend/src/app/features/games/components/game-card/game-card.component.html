@@ -3,14 +3,15 @@
     <div class="game-data">
         <div class="content">
             <h2>{{game.name}}</h2>
-            <p class="description">{{game.description}}</p>
-            <div class="genres" *ngIf="game.genre && game.genre.length > 0">
-                <p id="genre" *ngFor="let genre of game.genre">{{genre}}</p>
-            </div>
-            <p *ngIf="!game.genre || game.genre.length <= 0">Genre: N/A</p>
+            <p class="description">
+                {{ game.description.length < 100 ? game.description : (game.description | slice:0:100) + '...' }} </p>
+                    <div class="genres" *ngIf="game.genre && game.genre.length > 0">
+                        <p id="genre" *ngFor="let genre of game.genre">{{genre}}</p>
+                    </div>
+                    <p *ngIf="!game.genre || game.genre.length <= 0">Genre: N/A</p>
         </div>
         <div class="price-release">
-            <p class="price-tag">{{game.price > 0 ? (game.price | currency: 'EUR') : 'FREE'}}</p>
+            <p class="price-tag">{{game.price > 0 ? (game.price | currency: currency) : 'FREE'}}</p>
             <p class="release-date">Release: {{game.releaseDate.toString().split("T")[0]}}</p>
         </div>
     </div>

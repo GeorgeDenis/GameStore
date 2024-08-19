@@ -2,6 +2,7 @@
 using Application.Models.TokenInfo;
 using Application.Models.User;
 using Application.Persistence;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Memory;
 
@@ -25,7 +26,7 @@ namespace API.Controllers
             {
                 return Unauthorized(result);
             }
-            return Ok(new { Token = result.Value.Token, Expiration = result.Value.ExpirationTime });
+            return Ok(new { Token = result.Value.Token, Role = result.Value.Role, Expiration = result.Value.ExpirationTime });
         }
         [HttpPost("register")]
         public async Task<IActionResult> Register(PostUserModel model)
@@ -46,7 +47,7 @@ namespace API.Controllers
             {
                 return Ok(new { Valid = true, UserId = tokenInfo.UserId, ExpirationTime = tokenInfo.ExpirationTime });
             }
-            return Unauthorized();
+            return Unauthorized(new { Valid = true, Message = "Token expired" });
         }
 
         [HttpGet("logout")]

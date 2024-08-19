@@ -1,0 +1,17 @@
+<mat-card class="card-content">
+    <div class="star-box">
+        <mat-icon class="star" *ngFor="let star of stars; index as i"
+            [ngStyle]="{'color': star ? 'yellow' : 'lightgray'}" (click)="highlightStars(i)">
+            star
+        </mat-icon>
+    </div>
+    <mat-form-field class="comment-section">
+        <mat-label>Textarea</mat-label>
+        <textarea matInput [(ngModel)]="review.comment"></textarea>
+    </mat-form-field>
+    <mat-card-actions class="review-btns">
+        <button mat-button (click)="handleCancel()"
+            style="background-color: rgb(202, 27, 27); color: white;">Cancel</button>
+        <button mat-button (click)="postReview()" style="background-color: rgb(47, 119, 47); color: white;">Add</button>
+    </mat-card-actions>
+</mat-card>

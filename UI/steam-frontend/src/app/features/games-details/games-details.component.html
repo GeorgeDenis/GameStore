@@ -1,5 +1,5 @@
 <div class="outer">
-  <mat-spinner style="margin-top: 300px;" *ngIf="!gameLoaded"></mat-spinner>
+  <mat-spinner style="margin-top: 300px;" *ngIf="!gameLoaded || !reviewsLoaded"></mat-spinner>
   <div class="game-details" *ngIf="game">
     <h1 class="title" *ngIf="game">{{game.name}}</h1>
     <div id="content">
@@ -18,12 +18,28 @@
   </div>
   <div class="buy-content" *ngIf="game">
     <p style="color: white; font-size: 24px; margin-left: 25px;">Buy {{game.name}}</p>
-    <div class="buy-area">
-      <div id="price-part">{{game.price > 0 ? (game.price | currency: 'EUR') : 'FREE'}}</div>
-      <div id="add-part">Buy</div>
+    <div class="buy-area" *ngIf="!purchaseStatus">
+      <div id="price-part">{{game.price > 0 ? (game.price | currency: currency) : 'FREE'}}</div>
+      <div id="add-part" (click)="handleAddGame()">Buy</div>
+    </div>
+    <div class="buy-area" *ngIf="purchaseStatus">
+      <div id="add-part" routerLink="['profile']">Game in library</div>
     </div>
   </div>
-  <div class="games-wrapper">
+  <div class="review-header" *ngIf="reviewsLoaded">
+    <h2 id="review-title">Reviews</h2>
+    <mat-form-field class="select-content">
+      <mat-label>Order by</mat-label>
+      <mat-select [(ngModel)]="filterType" (ngModelChange)="onFilterChange()">
+        <mat-option [value]="type.value" *ngFor="let type of orderTypes">{{type.viewValue}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <div class="games-container" *ngIf="game">
+    <app-post-review [gameId]="game.gameId" (reviewPosted)="onReviewPosted()"></app-post-review>
+  </div>
+  <div class="games-wrapper" *ngIf="reviewsLoaded">
+
     <div class="games-container" *ngIf="reviews.length > 0">
       <app-game-review *ngFor="let review of reviews" [review]="review"></app-game-review>
     </div>

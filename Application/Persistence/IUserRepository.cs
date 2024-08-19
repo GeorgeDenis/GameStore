@@ -7,5 +7,7 @@ namespace Application.Persistence
     {
         Task<Result<User>> FindByIdWithGamesAsync(Guid id);
         Task<Result<User>> FindByEmailAsync(string username);
+
+        Task<IEnumerable<Guid>> GetAllUserIds();
     }
 }

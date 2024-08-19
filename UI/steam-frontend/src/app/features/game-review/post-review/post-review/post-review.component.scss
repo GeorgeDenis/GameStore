@@ -1,0 +1,30 @@
+.card-content {
+    width: 900px;
+    margin-top: 30px;
+    background: linear-gradient(to bottom, #2d3d4c 0%, #2c3c4b 83%, #324251 86%, #2b3b4a 90%, #2f3f4e 93%, #2b3b4a 97%, #1a2a39 100%);
+    padding: 10px;
+    color: white;
+}
+
+.star-box {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.star {
+    cursor: pointer;
+    color: lightgray;
+}
+
+.review-btns {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.comment-section {
+    width: 90%;
+    margin: auto;
+}

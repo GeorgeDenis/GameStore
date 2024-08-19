@@ -1,0 +1,42 @@
+<div class="search-container">
+    <p style="color: white;font-size: 28px; margin: auto; font-weight: 500;">Filter games</p>
+    <p>Price:</p>
+    <mat-slider min="0" max="60" showTickMarks discrete>
+        <input value="0" matSliderStartThumb [(ngModel)]="minPrice">
+        <input value="60" matSliderEndThumb [(ngModel)]="maxPrice">
+    </mat-slider>
+    <p>Release Date:</p>
+    <mat-form-field>
+        <mat-label>Enter a date range</mat-label>
+        <mat-date-range-input [rangePicker]="picker">
+            <input matStartDate placeholder="Start date" [(ngModel)]="startDate">
+            <input matEndDate placeholder="End date" [(ngModel)]="endDate">
+        </mat-date-range-input>
+        <mat-hint style="color: white;">MM/DD/YYYY – MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-date-range-picker #picker></mat-date-range-picker>
+    </mat-form-field>
+    <p>Genres:</p>
+    <mat-accordion>
+        <mat-expansion-panel hideToggle>
+            <mat-expansion-panel-header>
+                <mat-panel-title> Choose game genres</mat-panel-title>
+            </mat-expansion-panel-header>
+            <mat-chip-set aria-label="Game genre selection">
+                <mat-chip *ngFor="let genre of availableGenres" [class.selected]="isSelected(genre)"
+                    (click)="toggleGenreSelection(genre)">
+                    {{ genre }}
+                </mat-chip>
+            </mat-chip-set>
+        </mat-expansion-panel>
+    </mat-accordion>
+    <div class="buttons">
+        <button mat-raised-button class="btn"
+            style="background: rgb(172, 24, 24); color: white; width: 100px; margin: auto;"
+            (click)="clearFilters()">Cancel</button>
+        <button mat-raised-button class="btn" style="background: #0c3f63; color: white; width: 100px; margin: auto;"
+            (click)="applyFilters()">Filter</button>
+    </div>
+
+
+</div>

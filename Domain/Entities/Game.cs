@@ -1,4 +1,6 @@
-﻿namespace Domain.Entities
+﻿using Domain.Common;
+
+namespace Domain.Entities
 {
     public class Game
     {
@@ -36,5 +38,15 @@
 
         public List<Review> Reviews { get; set; }
         public List<User> Users { get; set; }
+
+        public Result<Game> Update(string name, string description, string genre, decimal price, byte[] image)
+        {
+            Name = name;
+            Description = description;
+            Genre = genre;
+            Price = price;
+            Image = image;
+            return Result<Game>.Success(this);
+        }
     }
 }

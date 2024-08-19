@@ -6,6 +6,14 @@
     <div class="right">
         <a routerLink="/sign-in" *ngIf="!isAuthenticated()" routerLinkActive="active">Login</a>
         <a routerLink="/sign-up" *ngIf="!isAuthenticated()" routerLinkActive="active">Register</a>
-        <a (click)="logout()" *ngIf="isAuthenticated()">Logout</a>
+        <mat-icon routerLink="/profile" *ngIf="isAuthenticated()" aria-hidden="false" aria-label="Example user icon"
+            fontIcon="account_circle" class="icon"></mat-icon>
+        <app-currency-selector *ngIf="isAuthenticated()"></app-currency-selector>
+        <mat-icon (click)="openLogoutDialog()" *ngIf="isAuthenticated()" class="icon">exit_to_app</mat-icon>
+        <mat-icon class="icon" [matBadge]="getNumberOfUnreadNotifications()" *ngIf="isAuthenticated()"
+            (click)="openNotificationDialog('0ms', '0ms')"
+            [@buzzShine]="animationState">notification_important</mat-icon>
+        <app-admin-menu *ngIf="isAdmin()"></app-admin-menu>
+
     </div>
 </div>

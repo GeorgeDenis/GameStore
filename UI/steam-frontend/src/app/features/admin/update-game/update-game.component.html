@@ -1,0 +1,75 @@
+<div class="outer">
+    <div class="content">
+        <h1 style="color: white;">Update Game</h1>
+        <form class="form" (ngSubmit)="handleUpdateGame()">
+            <mat-form-field>
+                <mat-label>Game</mat-label>
+                <mat-select [(ngModel)]="game.gameId" name="food" #mySelect
+                    (ngModelChange)="getGameById(mySelect.value)">
+                    <mat-option *ngFor="let game of gamesValues" [value]="game.gameId">{{game.name}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Name</mat-label>
+                <input matInput [(ngModel)]="game.name" name="name">
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+                <mat-label>Description</mat-label>
+                <textarea matInput placeholder="Ex. It makes me feel..." [(ngModel)]="game.description"
+                    name="description"></textarea>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Choose a date</mat-label>
+                <input matInput [matDatepicker]="picker" [(ngModel)]="game.releaseDate" name="releaseDate">
+                <mat-hint>MM/DD/YYYY</mat-hint>
+                <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Price</mat-label>
+                <input matInput type="number" [(ngModel)]="game.price" name="price">
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Developer</mat-label>
+                <mat-select [(ngModel)]="game.developerId" name="food">
+                    <mat-option *ngFor="let developer of developersValue"
+                        [value]="developer.developerId">{{developer.name}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-accordion>
+                <mat-expansion-panel hideToggle>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>Current game genres</mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <mat-chip-set aria-label="Fish selection">
+                        <mat-chip *ngFor="let genre of game.genres" selectable="true"
+                            (click)="deleteGenreSelection(genre)" [ngClass]="{'selected-chip': isSelected(genre)}">
+                            {{genre}}
+                        </mat-chip>
+                    </mat-chip-set>
+                </mat-expansion-panel>
+            </mat-accordion>
+            <mat-accordion>
+                <mat-expansion-panel hideToggle>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title> Choose game genres</mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <mat-chip-set aria-label="Fish selection">
+                        <mat-chip *ngFor="let genre of availableGenres" selectable="true"
+                            (click)="toggleGenreSelection(genre)" [ngClass]="{'selected-chip': isSelected(genre)}">
+                            {{genre}}
+                        </mat-chip>
+                    </mat-chip-set>
+                </mat-expansion-panel>
+            </mat-accordion>
+            <input type="file" (change)="onFileSelected($event)" accept="image/*">
+            <div class="buttons"> <button mat-raised-button class="btn" style="background: #253846; color: white;"
+                    (click)="handleClear()">Cancel</button>
+
+                <button mat-raised-button class="btn" style="background: #253846; color: white;">Update Game</button>
+            </div>
+
+
+        </form>
+    </div>
+</div>

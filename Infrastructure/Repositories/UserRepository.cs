@@ -28,5 +28,16 @@ namespace Infrastructure.Repositories
             }
             return Result<User>.Failure($"Entity with id {email} not found");
         }
+
+        public async Task<IEnumerable<Guid>> GetAllUserIds()
+        {
+            var userIds = new List<Guid>();
+            var users = context.Users.ToList();
+            foreach (var user in users)
+            {
+                userIds.Add(user.UserId);
+            }
+            return userIds;
+        }
     }
 }

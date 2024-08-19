@@ -1,7 +1,9 @@
-﻿using Application.Persistence;
+﻿using Application.Hubs;
+using Application.Persistence;
 using Domain.Entities;
 using MediatR;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.SignalR;
 using System.Text;
 
 namespace Application.Features.Games.Commands.CreateGameCommand
@@ -10,6 +12,7 @@ namespace Application.Features.Games.Commands.CreateGameCommand
     {
         private readonly IGameRepository gameRepository;
         private readonly IDeveloperRepository developerRepository;
+
         public CreateGameCommandHandler(IGameRepository gameRepository, IDeveloperRepository developerRepository)
         {
             this.gameRepository = gameRepository;
@@ -27,7 +30,7 @@ namespace Application.Features.Games.Commands.CreateGameCommand
                 };
             }
             var image = await ConvertFormFileToByteArray(request.Image);
-            var genre = GetGenres(request.Genres); 
+            var genre = GetGenres(request.Genres);
             var game = new Game(request.Name, request.Description, request.ReleaseDate, genre, request.Price, request.DeveloperId, image);
             var result = await gameRepository.AddAsync(game);
             if (!result.IsSuccess)
@@ -39,6 +42,8 @@ namespace Application.Features.Games.Commands.CreateGameCommand
                 };
 
             }
+
+
             return new CreateGameCommandResponse
             {
                 Success = true,
@@ -46,11 +51,11 @@ namespace Application.Features.Games.Commands.CreateGameCommand
         }
         public static async Task<byte[]> ConvertFormFileToByteArray(IFormFile file)
         {
-            if(file == null || file.Length == 0)
+            if (file == null || file.Length == 0)
             {
                 return null;
             }
-            using(var memoryStream = new MemoryStream())
+            using (var memoryStream = new MemoryStream())
             {
                 await file.CopyToAsync(memoryStream);
                 return memoryStream.ToArray();
@@ -59,13 +64,19 @@ namespace Application.Features.Games.Commands.CreateGameCommand
         public static string GetGenres(IEnumerable<string> genres)
         {
             var genre = new StringBuilder();
-            foreach (var genresItem in genres)
+            foreach (var genreItem in genres)
             {
-                genre.Append(genresItem);
+                genre.Append(genreItem);
                 genre.Append(',');
             }
-            genre.Remove(genre.Length - 1, 1);
+
+            if (genre.Length > 0)
+            {
+                genre.Remove(genre.Length - 1, 1);
+            }
+
             return genre.ToString();
         }
+
     }
 }

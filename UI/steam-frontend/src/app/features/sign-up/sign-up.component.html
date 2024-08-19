@@ -1,14 +1,27 @@
 <div class="outer">
     <div class="content">
         <h1 style="color: white;">Create your account</h1>
-        <form class="form" (ngSubmit)="signUp()">
+        <form #signUpForm="ngForm" class="form" (ngSubmit)="signUp()">
             <label>Email Address</label>
-            <input name="email" type="text" [(ngModel)]="credentials.email">
+            <input name="email" #email="ngModel" required email
+                pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" type="text" [(ngModel)]="credentials.email">
+            <em *ngIf="email.touched && email.errors?.['required']">Email is required</em>
+            <em *ngIf="email.touched && email.errors?.['pattern']">Invalid email format</em>
             <label>Name</label>
-            <input name="name" type="text" [(ngModel)]="credentials.name">
+            <input name="name" #name="ngModel" type="text" required [(ngModel)]="credentials.name">
+            <em *ngIf="name.touched && name.errors?.['required']">Name is required</em>
             <label>Password</label>
-            <input name="password" type="password" [(ngModel)]="credentials.password">
-            <button mat-raised-button class="btn" style="background: #253846; color: white;">Sign Up</button>
+            <input name="password" required #password="ngModel" type="password" [(ngModel)]="credentials.password"
+                minlength="8" pattern="^(?=.*[A-Z])(?=.*[!@#$&*]).{8,}$">
+            <em *ngIf="password.touched && password.errors?.['required']">Password is required</em>
+            <em *ngIf="password.touched && password.errors?.['minlength']">Password must be at least 8 characters</em>
+            <em *ngIf="password.touched && password.errors?.['pattern']">Password must contain at least one uppercase
+                letter and one special character</em>
+            <label>Confirm Password</label>
+            <input name="confirmPassword" #confirm="ngModel"  required type="password" [(ngModel)]="confirmPassword">
+            <em *ngIf="confirm.touched && confirm.errors?.['required']">Confirm Password is required</em>
+            <button mat-raised-button class="btn" style="background: #253846; color: white;"
+                [disabled]="signUpForm.invalid">Sign Up</button>
             <p>Already have an account? <a routerLink="/sign-in" style="color:white">Sign in</a></p>
         </form>
     </div>

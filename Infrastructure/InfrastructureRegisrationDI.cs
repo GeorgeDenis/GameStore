@@ -1,7 +1,9 @@
 ﻿using Application;
 using Application.Persistence;
+using Application.Strategy;
 using Infrastructure.Repositories;
 using Infrastructure.Services;
+using Infrastructure.Strategies;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -22,10 +24,20 @@ namespace Infrastructure
             services.AddScoped<IDeveloperRepository, DeveloperRepository>();
             services.AddScoped<IGameRepository, GameRepository>();
             services.AddScoped<IReviewRepository, ReviewRepository>();
+            services.AddScoped<INotificationRepository, NotificationRepository>();
 
 
             services.AddScoped<IAuthenticationService, AuthenticationService>();
             services.AddScoped<ITokenService, TokenService>();
+            services.AddScoped<INotificationService, NotificationService>();
+
+            services.AddScoped(typeof(IAppLogger<>), typeof(LoggerService<>));
+
+
+            services.AddScoped<IPriceCalculator, PriceCalculator>();
+            services.AddScoped<IPriceCalculationStrategy, RONPriceCalculationStrategy>();
+            services.AddScoped<IPriceCalculationStrategy, USDPriceCalculationStrategy>();
+            services.AddScoped<IPriceCalculationStrategy, EURPriceCalculationStrategy>();
             return services;
         }
     }

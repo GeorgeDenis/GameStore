@@ -1,5 +1,7 @@
 ﻿using Application.Features.GameUser.Commands.AddGameUserCommand;
 using Application.Features.GameUser.Queries.GetGamesByUserIdQuery;
+using Application.Features.GameUser.Queries.GetPurchaseStatus;
+using Application.Models.GameUser;
 using Domain.Entities;
 using Infrastructure;
 using Microsoft.AspNetCore.Http;
@@ -18,9 +20,9 @@ namespace API.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Purchase(Guid userId, Guid gameId)
+        public async Task<IActionResult> Purchase([FromBody] PurchaseRequest model)
         {
-            var command = new AddGameUserCommand { GameId = gameId, UserId = userId };
+            var command = new AddGameUserCommand { GameId = model.GameId, UserId = model.UserId };
             var result = await Mediator.Send(command);
             if (result.Success)
             {
@@ -46,13 +48,24 @@ namespace API.Controllers
             //    });
             //}
             //return Ok(games);
-            var command = new GetGamesByUserIdQuery {  };
+            var command = new GetGamesByUserIdQuery { };
             var result = await Mediator.Send(command);
             if (result.Success)
             {
                 return Ok(result);
             }
             return BadRequest(result);
+        }
+        [HttpGet("purchase/{gameId}")]
+        public async Task<IActionResult> GetPurchaseStatus(Guid gameId)
+        {
+            var query = new GetPurchaseStatusQuery { GameId = gameId };
+            var result = await Mediator.Send(query);
+            if (!result.Success)
+            {
+                return BadRequest(result);
+            }
+            return Ok(result);
         }
     }
 }

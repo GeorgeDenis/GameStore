@@ -26,6 +26,7 @@ namespace Infrastructure.Repositories
             if (entity.IsSuccess)
             {
                 context.Set<T>().Remove(entity.Value);
+                await context.SaveChangesAsync();
                 return Result<T>.Success(entity.Value);
             }
             return Result<T>.Failure($"Entity with id {id} not found");

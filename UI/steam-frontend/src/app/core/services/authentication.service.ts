@@ -6,22 +6,26 @@ import { HttpClient } from '@angular/common/http';
 import { ISignUpModel } from '../models/user/signup';
 import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
+import { map } from 'rxjs';
+import { IValidToken } from '../models/token/validateToken';
+import { firstValueFrom } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthenticationService {
-  baseUrl = "https://localhost:7156/api/v1/Auth"
+  baseUrl = "http://localhost:5169/api/v1/Auth"
   private tokenKey = 'token';
 
   constructor(private baseService: BaseService, private http: HttpClient, private router: Router) { }
 
   login(data: ISignInModel) {
-    return this.baseService.post<IToken>('/auth/login', data);
+    return this.baseService.post<IToken>('/Auth/login', data);
   }
 
   register(data: ISignUpModel) {
-    return this.http.post(`${this.baseUrl}/register`, data, { headers: this.buildHeaders() });
+    return this.baseService.post(`/Auth/register`, data);
+
   }
 
   isAuthenticated(): boolean {
@@ -32,13 +36,27 @@ export class AuthenticationService {
       return false;
     }
   }
+
+  isAdmin(): boolean{
+    const role = localStorage.getItem("role");
+    if (role == "Admin") {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
   logout() {
     return this.baseService.get(`/Auth/logout`);
   }
-  
-  private buildHeaders() {
-    return {
-      'Content-Type': 'application/json'
-    };
+  validateToken(): Observable<IValidToken> {
+    return this.baseService.get<IValidToken>(`/Auth/validate`);
+  }
+  getUserId(): Observable<string> {
+    return this.validateToken().pipe(map(response => response.userId));
+  }
+
+  async getUserIdAsync(): Promise<string> {
+    return await firstValueFrom(this.getUserId());
   }
 }

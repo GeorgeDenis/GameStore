@@ -7,27 +7,44 @@ import { AuthenticationService } from 'src/app/core/services/authentication.serv
 @Component({
   selector: 'app-sign-up',
   templateUrl: './sign-up.component.html',
-  styleUrls: ['./sign-up.component.scss']
+  styleUrls: ['./sign-up.component.scss'],
 })
 export class SignUpComponent {
   credentials: ISignUpModel = {
     name: '',
     email: '',
-    password: ''
-  }
-  constructor(private toastService: ToastService, private authService: AuthenticationService, private router: Router) { }
+    password: '',
+  };
+  confirmPassword?: string;
+  constructor(
+    private toastService: ToastService,
+    private authService: AuthenticationService,
+    private router: Router
+  ) {}
   signUp() {
-    if (this.credentials.name == '' || this.credentials.email == '' || this.credentials.password == '') {
-      this.toastService.error("All fields must be completed!");
+    if (
+      this.credentials.name == '' ||
+      this.credentials.email == '' ||
+      this.credentials.password == '' ||
+      this.confirmPassword == ''
+    ) {
+      this.toastService.error('All fields must be completed!');
+      return;
+    }
+
+    if (this.credentials.password !== this.confirmPassword) {
+      this.toastService.error('Passwords do not match!');
       return;
     }
     this.authService.register(this.credentials).subscribe({
       next: (response) => {
         console.log(response);
-        this.toastService.success("Register succesfully!");
-        this.router.navigate(['/sign-in'])
+        this.toastService.success('Register succesfully!');
+        this.router.navigate(['/sign-in']);
       },
-      error: (err) => { console.error("Error:", err), this.toastService.error(err.error.errors) },
-    })
+      error: (err) => {
+        console.error('Error:', err), this.toastService.error(err.error.errors);
+      },
+    });
   }
 }

@@ -1,4 +1,6 @@
-﻿namespace Domain.Entities
+﻿using Domain.Common;
+
+namespace Domain.Entities
 {
     public class User
     {
@@ -6,16 +8,18 @@
         public string Name { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
+        public Role UserRole { get; set; }
         public User()
         {
 
         }
-        public User(string name, string email, string password)
+        public User(string name, string email, string password, Role role)
         {
             UserId = Guid.NewGuid();
             Name = name;
             Email = email;
             Password = password;
+            UserRole = role;
             Games = [];
         }
 

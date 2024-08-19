@@ -91,6 +91,7 @@
     justify-content: space-between;
     align-items: center;
 }
+
 .buy-area {
     display: flex;
     align-items: center;
@@ -100,6 +101,7 @@
     background-color: black;
     padding: 2px;
 }
+
 
 #price-part {
     color: aliceblue;
@@ -121,7 +123,7 @@
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
-    margin-top: 20px; 
+    margin-top: 10px;
 }
 
 .games-wrapper::-webkit-scrollbar {
@@ -133,6 +135,7 @@
     flex-direction: column;
     align-items: center;
 }
+
 .card-content {
     width: 900px;
     background: linear-gradient(to bottom, #2d3d4c 0%, #2c3c4b 83%, #324251 86%, #2b3b4a 90%, #2f3f4e 93%, #2b3b4a 97%, #1a2a39 100%);
@@ -142,4 +145,22 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.review-header {
+    display: flex;
+    width: 52%;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#review-title {
+    color: white;
+    font-size: 24px;
+    margin: 0 25px;
+}
+
+.select-content {
+    width: 200px;
 }

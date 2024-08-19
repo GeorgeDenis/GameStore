@@ -1,0 +1,10 @@
+<div class="notification-container" *ngIf="notificationData">
+    <p class="notification">{{getNotificationText()}}</p>
+    <mat-icon style="cursor: pointer;" *ngIf="!notificationData.readStatus" (click)="handleReadNotification()"
+        mat-raised-button #tooltip="matTooltip" matTooltip="Mark as read" [matTooltipPosition]="'below'"
+        matTooltipHideDelay="100">
+        check_circle_outline
+    </mat-icon>
+    <mat-icon *ngIf="notificationData.readStatus" class="read">check_circle</mat-icon>
+</div>
+<div timeago [date]="notificationData.dateSent" [live]="true"></div>

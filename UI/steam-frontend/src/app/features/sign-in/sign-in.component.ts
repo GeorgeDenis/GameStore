@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { ToastService } from 'angular-toastify';
 import { ISignInModel } from 'src/app/core/models/user/signIn';
 import { IToken } from 'src/app/core/models/user/tokenDetails';
 import { BaseService } from 'src/app/core/services/base.service';
 import { Router } from '@angular/router';
 import { AuthenticationService } from 'src/app/core/services/authentication.service';
+import { NotificationRefreshService } from 'src/app/core/services/notification-refresh.service';
 
 @Component({
   selector: 'app-sign-in',
@@ -16,7 +17,7 @@ export class SignInComponent {
     email: '',
     password: ''
   }
-  constructor(private toastService: ToastService, private authService: AuthenticationService, private router: Router) { }
+  constructor(private toastService: ToastService, private authService: AuthenticationService, private router: Router, private notificationRefreshService:NotificationRefreshService) { }
   //   signIn(){
   //     this.baseService.post<IToken>(this.baseUrl).subscribe({
   //       next: (response) => { console.log(response) },
@@ -31,9 +32,10 @@ export class SignInComponent {
 
     this.authService.login(this.credentials).subscribe({
       next: (response) => {
-        console.log(response);
         this.toastService.success("Login successfully!");
         localStorage.setItem('token', response.token);
+        localStorage.setItem('role', response.role)
+        this.notificationRefreshService.handleLoadNotificationsOnLogin();
         this.router.navigate(['/games']);
       },
       error: (err) => {

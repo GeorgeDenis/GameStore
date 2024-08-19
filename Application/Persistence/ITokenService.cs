@@ -1,4 +1,6 @@
-﻿using Domain.Common;
+﻿using Application.Models.TokenInfo;
+using Domain.Common;
+using Domain.Entities;
 
 namespace Application.Persistence
 {
@@ -6,5 +8,6 @@ namespace Application.Persistence
     {
         Result<string> GetUserId();
         Result<string> GetCurrentUserToken();
+        Result<TokenInfo> GetTokenData();
     }
 }

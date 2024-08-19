@@ -1,0 +1,15 @@
+<div class="profile-info" *ngIf="user">
+    <div class="profile-card">
+        <mat-icon fontIcon="account_circle" class="icon"></mat-icon>
+        <p>Name: {{user.name}}</p>
+        <p>Email: {{user.email}}</p>
+    </div>
+    <div class="games-wrapper">
+        <div class="games-container">
+            <!-- <mat-spinner style="margin-top: 300px;" *ngIf="!gamesLoaded"></mat-spinner> -->
+            <div *ngFor="let game of games; let i = index">
+                <app-game-card [game]="game" [imageNr]="i"></app-game-card>
+            </div>
+        </div>
+    </div>
+</div>

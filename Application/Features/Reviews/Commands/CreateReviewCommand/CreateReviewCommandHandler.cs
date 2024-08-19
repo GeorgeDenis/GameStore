@@ -36,6 +36,15 @@ namespace Application.Features.Reviews.Commands.CreateReviewCommand
                     Message = "Game with this id doesn't exist"
                 };
             }
+            var reviewExists = await reviewRepository.UserHasGame(request.UserId, request.GameId);
+            if (reviewExists)
+            {
+                return new CreateReviewCommandResponse
+                {
+                    Success = false,
+                    Message = "You've already reviewed this game!"
+                };
+            }
             var review = new Review(request.Rating, request.Comment, request.UserId, request.GameId, user.Value, game.Value);
             var result = await reviewRepository.AddAsync(review);
             if (!result.IsSuccess)
