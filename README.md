@@ -1,5 +1,4 @@
 #  Steam-like Game Store
-<div align="justify">
 ## Features
 ###  🎮 Game Store
 -  Storefront: Browse all available games.
