@@ -41,6 +41,12 @@ Admins can manage the game catalog with the ability to add, update, or delete ga
 ![image](https://github.com/user-attachments/assets/1303b745-dd6c-4b0a-98a3-031270c7db4b)
   - Notifications <br />
 ![image](https://github.com/user-attachments/assets/df39b5a1-8693-4ebb-95be-d82c69d56deb)
+  - Add Game <br />
+![image](https://github.com/user-attachments/assets/ab230f04-cae5-47e3-bf11-a831eb8aea3e)
+  - Delete Game <br />
+![image](https://github.com/user-attachments/assets/78027d6c-244e-4e2e-88e7-63d3cb11dc5f)
+  - Update Game <br />
+![image](https://github.com/user-attachments/assets/6d1335c2-351d-439b-9221-403907df4904)
 
 
 
