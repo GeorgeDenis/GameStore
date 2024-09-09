@@ -5,6 +5,7 @@
 Admins can manage the game catalog with the ability to add, update, or delete games.
   </p>
 </div>
+
 ## Features
 ###  🎮 Game Store
 -  Storefront: Browse all available games.
