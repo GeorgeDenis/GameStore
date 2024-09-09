@@ -233,6 +233,27 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "API.Controllers.GameController",
+    "Method": "GetGamesByPage",
+    "RelativePath": "api/v1/Game/paginated",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "size",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "API.Controllers.GameUserController",
     "Method": "Purchase",
     "RelativePath": "api/v1/GameUser",
@@ -270,6 +291,27 @@
         "Name": "gameId",
         "Type": "System.Guid",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.NotificationController",
+    "Method": "GetNotificationsPaginated",
+    "RelativePath": "api/v1/Notification/paginated",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

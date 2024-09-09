@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nnlG1Z/3Bc4=",
+  "dgSpecHash": "n2XXwxmIKcQ=",
   "success": true,
-  "projectFilePath": "K:\\SteamClone\\SteamClone\\Application\\Application.csproj",
+  "projectFilePath": "K:\\SteamClone\\Application\\Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\georg\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\georg\\.nuget\\packages\\fluentvalidation\\11.9.2\\fluentvalidation.11.9.2.nupkg.sha512",

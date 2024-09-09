@@ -1,7 +1,7 @@
 import { EventEmitter, Injectable, Output } from '@angular/core';
 import { BaseService } from './base.service';
 import { Observable } from 'rxjs';
-import { INotification } from '../models/notification/notification';
+import { INotification, INotificationPaginated } from '../models/notification/notification';
 
 @Injectable({
   providedIn: 'root'
@@ -14,6 +14,10 @@ export class NotificationService {
 
   getAllNotificationsForUser(): Observable<{ notifications: INotification[] }> {
     return this.baseService.get(`/Notification/userId`);
+  }
+
+  getAllNotificationsForUserPaginated(page: number, pageSize: number): Observable<{ notifications: INotificationPaginated }> {
+    return this.baseService.get(`/Notification/paginated?page=${page}&pageSize=${pageSize}`);
   }
 
   handleReadNotification(notificationId: string) {

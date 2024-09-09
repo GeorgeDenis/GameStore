@@ -121,7 +121,7 @@ export class SiteHeaderComponent {
   openNotificationDialog(enterAnimationDuration: string, exitAnimationDuration: string): void {
     this.dialog.open(NotificationPanelComponent, {
       width: '500px',
-      height: '450px',
+      height: '500px',
       enterAnimationDuration,
       exitAnimationDuration,
     });

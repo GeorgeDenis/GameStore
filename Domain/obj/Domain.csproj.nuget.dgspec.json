@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "K:\\SteamClone\\SteamClone\\Domain\\Domain.csproj": {}
+    "K:\\SteamClone\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "K:\\SteamClone\\SteamClone\\Domain\\Domain.csproj": {
+    "K:\\SteamClone\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "K:\\SteamClone\\SteamClone\\Domain\\Domain.csproj",
+        "projectUniqueName": "K:\\SteamClone\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "K:\\SteamClone\\SteamClone\\Domain\\Domain.csproj",
+        "projectPath": "K:\\SteamClone\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\georg\\.nuget\\packages\\",
-        "outputPath": "K:\\SteamClone\\SteamClone\\Domain\\obj\\",
+        "outputPath": "K:\\SteamClone\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\georg\\AppData\\Roaming\\NuGet\\NuGet.Config",

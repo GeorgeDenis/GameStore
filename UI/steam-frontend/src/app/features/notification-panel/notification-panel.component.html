@@ -1,4 +1,7 @@
 <h2 mat-dialog-title>Notifications</h2>
-<mat-dialog-content class="mat-typography" class="notification-container">
+<mat-dialog-content class="mat-typography notification-container">
     <app-notification *ngFor="let notification of notifications" [notificationData]="notification"></app-notification>
 </mat-dialog-content>
+<mat-paginator [length]="totalItems" [pageSize]="DEFAULT_PAGE_SIZE" [pageIndex]="pageIndex"
+    (page)="handlePageEvent($event)" [showFirstLastButtons]="showFirstLastButtons" aria-label="Select page">
+</mat-paginator>

@@ -3657,11 +3657,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "K:\\SteamClone\\SteamClone\\Application\\Application.csproj",
+      "projectUniqueName": "K:\\SteamClone\\Application\\Application.csproj",
       "projectName": "Application",
-      "projectPath": "K:\\SteamClone\\SteamClone\\Application\\Application.csproj",
+      "projectPath": "K:\\SteamClone\\Application\\Application.csproj",
       "packagesPath": "C:\\Users\\georg\\.nuget\\packages\\",
-      "outputPath": "K:\\SteamClone\\SteamClone\\Application\\obj\\",
+      "outputPath": "K:\\SteamClone\\Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\georg\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3679,8 +3679,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "K:\\SteamClone\\SteamClone\\Domain\\Domain.csproj": {
-              "projectPath": "K:\\SteamClone\\SteamClone\\Domain\\Domain.csproj"
+            "K:\\SteamClone\\Domain\\Domain.csproj": {
+              "projectPath": "K:\\SteamClone\\Domain\\Domain.csproj"
             }
           }
         }

@@ -1,42 +1,54 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "K:\\SteamClone\\SteamClone\\",
+  "WorkspaceRootPath": "K:\\SteamClone\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B9F8FC1F-BC35-404A-9428-9C209BD89A3C}|API\\API.csproj|k:\\steamclone\\steamclone\\api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{B9F8FC1F-BC35-404A-9428-9C209BD89A3C}|API\\API.csproj|k:\\steamclone\\api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{B9F8FC1F-BC35-404A-9428-9C209BD89A3C}|API\\API.csproj|solutionrelative:api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B9F8FC1F-BC35-404A-9428-9C209BD89A3C}|API\\API.csproj|k:\\steamclone\\steamclone\\api\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DC1BA9BC-ED94-40A5-9C97-07035CD543D4}|Application\\Application.csproj|k:\\steamclone\\application\\validators\\creategamecommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC1BA9BC-ED94-40A5-9C97-07035CD543D4}|Application\\Application.csproj|solutionrelative:application\\validators\\creategamecommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9F8FC1F-BC35-404A-9428-9C209BD89A3C}|API\\API.csproj|k:\\steamclone\\api\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B9F8FC1F-BC35-404A-9428-9C209BD89A3C}|API\\API.csproj|solutionrelative:api\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC1BA9BC-ED94-40A5-9C97-07035CD543D4}|Application\\Application.csproj|k:\\steamclone\\steamclone\\application\\hubs\\notificationhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC1BA9BC-ED94-40A5-9C97-07035CD543D4}|Application\\Application.csproj|solutionrelative:application\\hubs\\notificationhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DC1BA9BC-ED94-40A5-9C97-07035CD543D4}|Application\\Application.csproj|k:\\steamclone\\steamclone\\application\\features\\notifications\\commands\\readnotificationcommand\\readnotificationcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC1BA9BC-ED94-40A5-9C97-07035CD543D4}|Application\\Application.csproj|solutionrelative:application\\features\\notifications\\commands\\readnotificationcommand\\readnotificationcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9F8FC1F-BC35-404A-9428-9C209BD89A3C}|API\\API.csproj|k:\\steamclone\\steamclone\\api\\controllers\\notificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B9F8FC1F-BC35-404A-9428-9C209BD89A3C}|API\\API.csproj|k:\\steamclone\\api\\controllers\\notificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B9F8FC1F-BC35-404A-9428-9C209BD89A3C}|API\\API.csproj|solutionrelative:api\\controllers\\notificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B9F8FC1F-BC35-404A-9428-9C209BD89A3C}|API\\API.csproj|k:\\steamclone\\steamclone\\api\\controllers\\developercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9F8FC1F-BC35-404A-9428-9C209BD89A3C}|API\\API.csproj|solutionrelative:api\\controllers\\developercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B9F8FC1F-BC35-404A-9428-9C209BD89A3C}|API\\API.csproj|k:\\steamclone\\api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9F8FC1F-BC35-404A-9428-9C209BD89A3C}|API\\API.csproj|solutionrelative:api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC1BA9BC-ED94-40A5-9C97-07035CD543D4}|Application\\Application.csproj|k:\\steamclone\\steamclone\\application\\features\\games\\commands\\updategamecommand\\updategamecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC1BA9BC-ED94-40A5-9C97-07035CD543D4}|Application\\Application.csproj|solutionrelative:application\\features\\games\\commands\\updategamecommand\\updategamecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F90C605E-CADD-4134-BD00-D77CA007E38B}|Infrastructure\\Infrastructure.csproj|k:\\steamclone\\infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F90C605E-CADD-4134-BD00-D77CA007E38B}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B9F8FC1F-BC35-404A-9428-9C209BD89A3C}|API\\API.csproj|k:\\steamclone\\steamclone\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F90C605E-CADD-4134-BD00-D77CA007E38B}|Infrastructure\\Infrastructure.csproj|k:\\steamclone\\infrastructure\\infrastructureregisrationdi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F90C605E-CADD-4134-BD00-D77CA007E38B}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\infrastructureregisrationdi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9F8FC1F-BC35-404A-9428-9C209BD89A3C}|API\\API.csproj|k:\\steamclone\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B9F8FC1F-BC35-404A-9428-9C209BD89A3C}|API\\API.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC1BA9BC-ED94-40A5-9C97-07035CD543D4}|Application\\Application.csproj|k:\\steamclone\\steamclone\\application\\features\\gameuser\\queries\\getgamesbyuseridquery\\getgamesbyuseridqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC1BA9BC-ED94-40A5-9C97-07035CD543D4}|Application\\Application.csproj|solutionrelative:application\\features\\gameuser\\queries\\getgamesbyuseridquery\\getgamesbyuseridqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F90C605E-CADD-4134-BD00-D77CA007E38B}|Infrastructure\\Infrastructure.csproj|k:\\steamclone\\infrastructure\\repositories\\notificationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F90C605E-CADD-4134-BD00-D77CA007E38B}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\notificationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC1BA9BC-ED94-40A5-9C97-07035CD543D4}|Application\\Application.csproj|k:\\steamclone\\application\\features\\notifications\\queries\\getnotificationspaginatedquery\\getnotificationspaginatedqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC1BA9BC-ED94-40A5-9C97-07035CD543D4}|Application\\Application.csproj|solutionrelative:application\\features\\notifications\\queries\\getnotificationspaginatedquery\\getnotificationspaginatedqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC1BA9BC-ED94-40A5-9C97-07035CD543D4}|Application\\Application.csproj|k:\\steamclone\\application\\features\\notifications\\queries\\getnotificationspaginatedquery\\getnotificationspaginatedqueryresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC1BA9BC-ED94-40A5-9C97-07035CD543D4}|Application\\Application.csproj|solutionrelative:application\\features\\notifications\\queries\\getnotificationspaginatedquery\\getnotificationspaginatedqueryresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC1BA9BC-ED94-40A5-9C97-07035CD543D4}|Application\\Application.csproj|k:\\steamclone\\application\\models\\notification\\getnotificationspaginatedresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC1BA9BC-ED94-40A5-9C97-07035CD543D4}|Application\\Application.csproj|solutionrelative:application\\models\\notification\\getnotificationspaginatedresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,121 +58,164 @@
       "DocumentGroups": [
         {
           "DockedWidth": 154,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "appsettings.json",
-              "DocumentMoniker": "K:\\SteamClone\\SteamClone\\API\\appsettings.json",
+              "DocumentMoniker": "K:\\SteamClone\\API\\appsettings.json",
               "RelativeDocumentMoniker": "API\\appsettings.json",
-              "ToolTip": "K:\\SteamClone\\SteamClone\\API\\appsettings.json",
+              "ToolTip": "K:\\SteamClone\\API\\appsettings.json",
               "RelativeToolTip": "API\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAB1AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-19T15:53:34.474Z",
+              "WhenOpened": "2024-09-09T13:32:06.112Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "GameController.cs",
-              "DocumentMoniker": "K:\\SteamClone\\SteamClone\\API\\Controllers\\GameController.cs",
-              "RelativeDocumentMoniker": "API\\Controllers\\GameController.cs",
-              "ToolTip": "K:\\SteamClone\\SteamClone\\API\\Controllers\\GameController.cs",
-              "RelativeToolTip": "API\\Controllers\\GameController.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAIwD4AAAAwAAAAAAAAAA==",
+              "Title": "CreateGameCommandValidator.cs",
+              "DocumentMoniker": "K:\\SteamClone\\Application\\Validators\\CreateGameCommandValidator.cs",
+              "RelativeDocumentMoniker": "Application\\Validators\\CreateGameCommandValidator.cs",
+              "ToolTip": "K:\\SteamClone\\Application\\Validators\\CreateGameCommandValidator.cs",
+              "RelativeToolTip": "Application\\Validators\\CreateGameCommandValidator.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwCQAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-14T12:11:15.745Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-09T07:16:25.167Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "NotificationHub.cs",
-              "DocumentMoniker": "K:\\SteamClone\\SteamClone\\Application\\Hubs\\NotificationHub.cs",
-              "RelativeDocumentMoniker": "Application\\Hubs\\NotificationHub.cs",
-              "ToolTip": "K:\\SteamClone\\SteamClone\\Application\\Hubs\\NotificationHub.cs",
-              "RelativeToolTip": "Application\\Hubs\\NotificationHub.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABEAAAA",
+              "Title": "GameController.cs",
+              "DocumentMoniker": "K:\\SteamClone\\API\\Controllers\\GameController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\GameController.cs",
+              "ToolTip": "K:\\SteamClone\\API\\Controllers\\GameController.cs",
+              "RelativeToolTip": "API\\Controllers\\GameController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-14T12:03:42.843Z"
+              "WhenOpened": "2024-09-06T13:43:15.831Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ReadNotificationCommandHandler.cs",
-              "DocumentMoniker": "K:\\SteamClone\\SteamClone\\Application\\Features\\Notifications\\Commands\\ReadNotificationCommand\\ReadNotificationCommandHandler.cs",
-              "RelativeDocumentMoniker": "Application\\Features\\Notifications\\Commands\\ReadNotificationCommand\\ReadNotificationCommandHandler.cs",
-              "ToolTip": "K:\\SteamClone\\SteamClone\\Application\\Features\\Notifications\\Commands\\ReadNotificationCommand\\ReadNotificationCommandHandler.cs",
-              "RelativeToolTip": "Application\\Features\\Notifications\\Commands\\ReadNotificationCommand\\ReadNotificationCommandHandler.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAIwA8AAAAIAAAA",
+              "DocumentIndex": 4,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "K:\\SteamClone\\API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\AuthController.cs",
+              "ToolTip": "K:\\SteamClone\\API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "API\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-14T08:52:21.17Z"
+              "WhenOpened": "2024-08-29T07:16:10.439Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "UpdateGameCommandHandler.cs",
-              "DocumentMoniker": "K:\\SteamClone\\SteamClone\\Application\\Features\\Games\\Commands\\UpdateGameCommand\\UpdateGameCommandHandler.cs",
-              "RelativeDocumentMoniker": "Application\\Features\\Games\\Commands\\UpdateGameCommand\\UpdateGameCommandHandler.cs",
-              "ToolTip": "K:\\SteamClone\\SteamClone\\Application\\Features\\Games\\Commands\\UpdateGameCommand\\UpdateGameCommandHandler.cs",
-              "RelativeToolTip": "Application\\Features\\Games\\Commands\\UpdateGameCommand\\UpdateGameCommandHandler.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAowC0AAAASAAAA",
+              "Title": "InfrastructureRegisrationDI.cs",
+              "DocumentMoniker": "K:\\SteamClone\\Infrastructure\\InfrastructureRegisrationDI.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\InfrastructureRegisrationDI.cs",
+              "ToolTip": "K:\\SteamClone\\Infrastructure\\InfrastructureRegisrationDI.cs",
+              "RelativeToolTip": "Infrastructure\\InfrastructureRegisrationDI.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAwAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-14T09:01:50.884Z"
+              "WhenOpened": "2024-08-22T11:23:35.283Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "Program.cs",
-              "DocumentMoniker": "K:\\SteamClone\\SteamClone\\API\\Program.cs",
+              "DocumentMoniker": "K:\\SteamClone\\API\\Program.cs",
               "RelativeDocumentMoniker": "API\\Program.cs",
-              "ToolTip": "K:\\SteamClone\\SteamClone\\API\\Program.cs",
+              "ToolTip": "K:\\SteamClone\\API\\Program.cs",
               "RelativeToolTip": "API\\Program.cs",
-              "ViewState": "AQIAAEUAAAAAAAAAAAAAAFkAAAAtAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-14T07:53:26.244Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "GetGamesByUserIdQueryHandler.cs",
-              "DocumentMoniker": "K:\\SteamClone\\SteamClone\\Application\\Features\\GameUser\\Queries\\GetGamesByUserIdQuery\\GetGamesByUserIdQueryHandler.cs",
-              "RelativeDocumentMoniker": "Application\\Features\\GameUser\\Queries\\GetGamesByUserIdQuery\\GetGamesByUserIdQueryHandler.cs",
-              "ToolTip": "K:\\SteamClone\\SteamClone\\Application\\Features\\GameUser\\Queries\\GetGamesByUserIdQuery\\GetGamesByUserIdQueryHandler.cs",
-              "RelativeToolTip": "Application\\Features\\GameUser\\Queries\\GetGamesByUserIdQuery\\GetGamesByUserIdQueryHandler.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABUAAAALAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-14T07:48:49.778Z"
+              "WhenOpened": "2024-08-22T11:23:17.64Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "DeveloperController.cs",
-              "DocumentMoniker": "K:\\SteamClone\\SteamClone\\API\\Controllers\\DeveloperController.cs",
-              "RelativeDocumentMoniker": "API\\Controllers\\DeveloperController.cs",
-              "ToolTip": "K:\\SteamClone\\SteamClone\\API\\Controllers\\DeveloperController.cs",
-              "RelativeToolTip": "API\\Controllers\\DeveloperController.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "K:\\SteamClone\\Infrastructure\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\UserRepository.cs",
+              "ToolTip": "K:\\SteamClone\\Infrastructure\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Repositories\\UserRepository.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-14T07:27:38.984Z"
+              "WhenOpened": "2024-08-22T06:33:56.608Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "NotificationController.cs",
-              "DocumentMoniker": "K:\\SteamClone\\SteamClone\\API\\Controllers\\NotificationController.cs",
-              "RelativeDocumentMoniker": "API\\Controllers\\NotificationController.cs",
-              "ToolTip": "K:\\SteamClone\\SteamClone\\API\\Controllers\\NotificationController.cs",
-              "RelativeToolTip": "API\\Controllers\\NotificationController.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAsAAABKAAAA",
+              "DocumentIndex": 11,
+              "Title": "GetNotificationsPaginatedResponseModel.cs",
+              "DocumentMoniker": "K:\\SteamClone\\Application\\Models\\Notification\\GetNotificationsPaginatedResponseModel.cs",
+              "RelativeDocumentMoniker": "Application\\Models\\Notification\\GetNotificationsPaginatedResponseModel.cs",
+              "ToolTip": "K:\\SteamClone\\Application\\Models\\Notification\\GetNotificationsPaginatedResponseModel.cs",
+              "RelativeToolTip": "Application\\Models\\Notification\\GetNotificationsPaginatedResponseModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-14T07:22:33.195Z"
+              "WhenOpened": "2024-08-21T10:31:29.153Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "GetNotificationsPaginatedQueryResponse.cs",
+              "DocumentMoniker": "K:\\SteamClone\\Application\\Features\\Notifications\\Queries\\GetNotificationsPaginatedQuery\\GetNotificationsPaginatedQueryResponse.cs",
+              "RelativeDocumentMoniker": "Application\\Features\\Notifications\\Queries\\GetNotificationsPaginatedQuery\\GetNotificationsPaginatedQueryResponse.cs",
+              "ToolTip": "K:\\SteamClone\\Application\\Features\\Notifications\\Queries\\GetNotificationsPaginatedQuery\\GetNotificationsPaginatedQueryResponse.cs",
+              "RelativeToolTip": "Application\\Features\\Notifications\\Queries\\GetNotificationsPaginatedQuery\\GetNotificationsPaginatedQueryResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T08:47:15.839Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NotificationController.cs",
+              "DocumentMoniker": "K:\\SteamClone\\API\\Controllers\\NotificationController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\NotificationController.cs",
+              "ToolTip": "K:\\SteamClone\\API\\Controllers\\NotificationController.cs",
+              "RelativeToolTip": "API\\Controllers\\NotificationController.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAowBwAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T07:47:57.989Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "NotificationRepository.cs",
+              "DocumentMoniker": "K:\\SteamClone\\Infrastructure\\Repositories\\NotificationRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\NotificationRepository.cs",
+              "ToolTip": "K:\\SteamClone\\Infrastructure\\Repositories\\NotificationRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Repositories\\NotificationRepository.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAQwB4AAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T07:43:29.92Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GetNotificationsPaginatedQueryHandler.cs",
+              "DocumentMoniker": "K:\\SteamClone\\Application\\Features\\Notifications\\Queries\\GetNotificationsPaginatedQuery\\GetNotificationsPaginatedQueryHandler.cs",
+              "RelativeDocumentMoniker": "Application\\Features\\Notifications\\Queries\\GetNotificationsPaginatedQuery\\GetNotificationsPaginatedQueryHandler.cs",
+              "ToolTip": "K:\\SteamClone\\Application\\Features\\Notifications\\Queries\\GetNotificationsPaginatedQuery\\GetNotificationsPaginatedQueryHandler.cs",
+              "RelativeToolTip": "Application\\Features\\Notifications\\Queries\\GetNotificationsPaginatedQuery\\GetNotificationsPaginatedQueryHandler.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAcwBsAAABaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T07:39:49.469Z"
             }
           ]
         }

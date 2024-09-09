@@ -1,4 +1,5 @@
 using API.Attributes;
+using API.Extensions;
 using API.Middleware;
 using Application;
 using Application.Hubs;
@@ -6,6 +7,7 @@ using Application.Models.Developer;
 using Application.Validators;
 using FluentValidation;
 using FluentValidation.AspNetCore;
+using Hangfire;
 using Infrastructure;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.OpenApi.Models;
@@ -81,9 +83,14 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseCors("CorsPolicy");
+app.UseBackgroundJobs();
 
+app.UseHangfireDashboard(options: new DashboardOptions
+{
+    Authorization = [],
+    DarkModeEnabled = false
+});
 app.UseMiddleware<TokenMiddleware>();
-
 app.UseAuthorization();
 
 app.MapControllers();

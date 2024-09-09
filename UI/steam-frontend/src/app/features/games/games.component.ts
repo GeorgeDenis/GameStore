@@ -17,7 +17,8 @@ export class GamesComponent implements OnInit {
   errorMessage: string = '';
   currentSearchValue: string = '';
 
-  constructor(private readonly baseService: BaseService, private readonly filterService: FilterService,private readonly currencyService: CurrencyService) { }
+
+  constructor(private readonly baseService: BaseService, private readonly filterService: FilterService, private readonly currencyService: CurrencyService) { }
 
   ngOnInit(): void {
     this.loadGames();

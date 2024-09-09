@@ -37,7 +37,7 @@ export class AuthenticationService {
     }
   }
 
-  isAdmin(): boolean{
+  isAdmin(): boolean {
     const role = localStorage.getItem("role");
     if (role == "Admin") {
       return true;

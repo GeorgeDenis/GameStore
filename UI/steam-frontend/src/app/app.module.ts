@@ -22,6 +22,7 @@ import { MatBadgeModule } from '@angular/material/badge';
 import { MatListModule } from '@angular/material/list';
 import { TooltipPosition, MatTooltipModule } from '@angular/material/tooltip';
 import { TimeagoModule } from "ngx-timeago";
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -98,6 +99,7 @@ import { NotificationComponent } from './features/notification-panel/notificatio
     MatBadgeModule,
     MatListModule,
     MatTooltipModule,
+    MatPaginatorModule,
     TimeagoModule.forRoot()
   ],
 

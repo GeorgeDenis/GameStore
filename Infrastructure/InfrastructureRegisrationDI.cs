@@ -1,6 +1,7 @@
 ﻿using Application;
 using Application.Persistence;
 using Application.Strategy;
+using Hangfire;
 using Infrastructure.Repositories;
 using Infrastructure.Services;
 using Infrastructure.Strategies;
@@ -19,6 +20,12 @@ namespace Infrastructure
                     configuration.GetConnectionString("SteamConnection"),
                     builder => builder.MigrationsAssembly(typeof(SteamContext).Assembly.FullName))
                 );
+
+            services.AddHangfire(config =>
+                config.UseSqlServerStorage(
+                        configuration.GetConnectionString("HangFireSteamConnectionString")));
+            services.AddHangfireServer(options => options.SchedulePollingInterval = TimeSpan.FromSeconds(1));
+
             services.AddScoped(typeof(IAsyncRepository<>), typeof(BaseRepository<>));
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IDeveloperRepository, DeveloperRepository>();

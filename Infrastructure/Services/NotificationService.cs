@@ -25,4 +25,23 @@ public class NotificationService : INotificationService
         }
         return notificationList;
     }
+
+    public async Task DeleteNotificationsOlderThanADay()
+    {
+        var oneDayAgo = DateTime.UtcNow.AddDays(-1);
+        var notifications = await _notificationRepository.GetAllAsync();
+
+        var notificationsToDelete = notifications.Value
+            .Where(x => x.ReadStatus && x.DateSent <= oneDayAgo)
+            .ToList();
+
+        if (notificationsToDelete.Count != 0)
+        {
+            foreach (var notification in notificationsToDelete)
+            {
+                await _notificationRepository.DeleteAsync(notification.NotificationId);
+            }
+        }
+    }
+
 }

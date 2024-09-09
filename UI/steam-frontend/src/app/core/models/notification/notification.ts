@@ -6,3 +6,10 @@ export interface INotification {
     dateSent?: Date,
     readStatus: boolean
 }
+
+export interface INotificationPaginated {
+    notifications: INotification[],
+    pageIndex: number,
+    totalPages: number,
+    totalItems: number
+}

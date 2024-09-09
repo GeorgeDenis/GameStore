@@ -3,11 +3,10 @@ using Application.Features.Games.Commands.CreateGameCommand;
 using Application.Features.Games.Commands.DeleteGameCommand;
 using Application.Features.Games.Commands.UpdateGameCommand;
 using Application.Features.Games.Queries.GetGameByIdQuery;
+using Application.Features.Games.Queries.GetGamesPaginatedQuery;
 using Application.Features.Games.Queries.GetGamesQuery;
-using Application.Features.GameUser.Queries.GetPurchaseStatus;
 using Application.Models.Game;
 using Application.Persistence;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
@@ -16,7 +15,8 @@ namespace API.Controllers
     {
         private readonly IAppLogger<GameController> _logger;
 
-        public GameController(IAppLogger<GameController> logger) {
+        public GameController(IAppLogger<GameController> logger)
+        {
             _logger = logger;
         }
         [Authentication]
@@ -61,7 +61,7 @@ namespace API.Controllers
                 GameId = model.GameId,
                 Name = model.Name,
                 Description = model.Description,
-                Price = model.Price, 
+                Price = model.Price,
                 Image = model.Image,
                 Genres = model.Genres
             };
@@ -103,6 +103,17 @@ namespace API.Controllers
             return Ok(result);
         }
 
+        [HttpGet("paginated")]
+        public async Task<IActionResult> GetGamesByPage(int page, int size)
+        {
+            var query = new GetGamesPaginatedQuery { Page = page, Size = size };
+            var result = await Mediator.Send(query);
+            if (!result.Success)
+            {
+                return BadRequest(result);
+            }
+            return Ok(result);
+        }
 
     }
 }
