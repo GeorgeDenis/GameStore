@@ -1,4 +1,10 @@
 #  Steam-like Game Store
+<div align="justify">
+  <p>
+ &emsp;A fully-featured Steam-inspired game store where users can explore a wide range of games, filter by price, release date, and genre, view detailed game pages, post reviews, and manage their profiles. While users can add games to their accounts, no real payment processing is implemented. The platform supports switching between multiple currencies (EUR, USD, RON), and notifications are automatically cleaned up after 24 hours via background jobs.
+Admins can manage the game catalog with the ability to add, update, or delete games.
+  </p>
+</div>
 ## Features
 ###  🎮 Game Store
 -  Storefront: Browse all available games.
